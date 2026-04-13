@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vilanculo Mobiliário - Design inteligente. Madeira de qualidade. Móveis sob medida para transformar seu espaço. Cozinhas, armários e camas personalizadas.">
+  <meta name="keywords" content="móveis, carpintaria, cozinhas, armários, camas, madeira, Moçambique, Matola">
+  <meta name="author" content="Vilanculo Mobiliário">
+  <meta name="theme-color" content="#3D2B1F">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vilanculo Mobiliário - Design inteligente. Madeira de qualidade.">
+  <meta property="og:description" content="Móveis sob medida para transformar seu espaço. Cozinhas, armários e camas personalizadas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vilanculomobiliario.co.mz">
+  <meta property="og:image" content="images/hero.jpg">
+  
+  <title>Vilanculo Mobiliário - Design inteligente. Madeira de qualidade.</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪵</text></svg>">
+</head>
+<body>
+  <!-- ========================================
+       HEADER / NAVEGAÇÃO
+       ======================================== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Vilanculo Mobiliário</a>
+      
+      <nav class="nav-desktop">
+        <a href="#cozinhas" class="nav-link" data-i18n="navCozinhas">Cozinhas</a>
+        <a href="#armarios" class="nav-link" data-i18n="navArmarios">Armários</a>
+        <a href="#camas" class="nav-link" data-i18n="navCamas">Camas</a>
+        <a href="#galeria" class="nav-link" data-i18n="navGaleria">Galeria</a>
+        <a href="#sobre" class="nav-link" data-i18n="navSobre">Sobre</a>
+        <a href="#contacto" class="nav-link" data-i18n="navContacto">Contacto</a>
+      </nav>
+      
+      <div class="header-actions">
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="pt">PT</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        
+        <button class="menu-toggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Menu Mobile -->
+  <nav class="nav-mobile">
+    <a href="#cozinhas" class="nav-link" data-i18n="navCozinhas">Cozinhas</a>
+    <a href="#armarios" class="nav-link" data-i18n="navArmarios">Armários</a>
+    <a href="#camas" class="nav-link" data-i18n="navCamas">Camas</a>
+    <a href="#galeria" class="nav-link" data-i18n="navGaleria">Galeria</a>
+    <a href="#sobre" class="nav-link" data-i18n="navSobre">Sobre</a>
+    <a href="#contacto" class="nav-link" data-i18n="navContacto">Contacto</a>
+  </nav>
+
+  <!-- ========================================
+       HERO SECTION
+       ======================================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Vilanculo Mobiliário</h1>
+        <p class="hero-subtitle" data-i18n="heroSubtitle">Design inteligente.</p>
+        <p class="hero-description" data-i18n="heroDescription">Madeira de qualidade.</p>
+        <p class="hero-cta" data-i18n="heroCta">Solicite já o seu móvel por medida e transforme o seu espaço.</p>
+        <a href="https://wa.me/258845629930" target="_blank" class="btn-whatsapp" data-i18n="btnWhatsapp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+          Pedir via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       COZINHAS
+       ======================================== -->
+  <section id="cozinhas" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="secCozinhas">Cozinhas</h2>
+        <p class="section-subtitle" data-i18n="secCozinhasSub">Cozinhas planejadas com design moderno e funcionalidade</p>
+      </div>
+      
+      <div class="produtos-grid" id="grid-cozinhas">
+        <!-- Produtos renderizados via JS -->
+      </div>
+      
+      <div class="load-more-container">
+        <button class="btn-load-more" id="load-more-cozinhas" onclick="carregarMais('cozinhas')">
+          <span class="spinner"></span>
+          <span data-i18n="btnCarregarMais">Carregar mais</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       ARMÁRIOS
+       ======================================== -->
+  <section id="armarios" class="section section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="secArmarios">Armários</h2>
+        <p class="section-subtitle" data-i18n="secArmariosSub">Armários e closets personalizados para seu espaço</p>
+      </div>
+      
+      <div class="produtos-grid" id="grid-armarios">
+        <!-- Produtos renderizados via JS -->
+      </div>
+      
+      <div class="load-more-container">
+        <button class="btn-load-more" id="load-more-armarios" onclick="carregarMais('armarios')">
+          <span class="spinner"></span>
+          <span data-i18n="btnCarregarMais">Carregar mais</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       CAMAS
+       ======================================== -->
+  <section id="camas" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="secCamas">Camas</h2>
+        <p class="section-subtitle" data-i18n="secCamasSub">Camas confortáveis e elegantes para seu descanso</p>
+      </div>
+      
+      <div class="produtos-grid" id="grid-camas">
+        <!-- Produtos renderizados via JS -->
+      </div>
+      
+      <div class="load-more-container">
+        <button class="btn-load-more" id="load-more-camas" onclick="carregarMais('camas')">
+          <span class="spinner"></span>
+          <span data-i18n="btnCarregarMais">Carregar mais</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       GALERIA
+       ======================================== -->
+  <section id="galeria" class="section section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="secGaleria">Galeria</h2>
+        <p class="section-subtitle" data-i18n="secGaleriaSub">Trabalhos realizados e projetos concluídos</p>
+      </div>
+      
+      <div class="galeria-grid" id="grid-galeria">
+        <!-- Galeria renderizada via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       SOBRE
+       ======================================== -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-imagem reveal">
+          <img src="images/hero.jpg" alt="Vilanculo Mobiliário - Oficina de carpintaria">
+        </div>
+        
+        <div class="sobre-conteudo">
+          <h2 data-i18n="sobreTitulo">Arte em Madeira com Paixão</h2>
+          <p data-i18n="sobreTexto1">A Vilanculo Mobiliário nasceu da paixão pela carpintaria e pelo design de interiores. Com anos de experiência, transformamos madeira de qualidade em móveis únicos que combinam beleza, funcionalidade e durabilidade.</p>
+          <p data-i18n="sobreTexto2">Cada peça é cuidadosamente planejada e executada com atenção aos detalhes, utilizando técnicas tradicionais e materiais selecionados. Nosso compromisso é criar móveis que superem as expectativas dos nossos clientes.</p>
+          
+          <div class="sobre-features">
+            <div class="sobre-feature reveal">
+              <div class="sobre-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <h4 data-i18n="sobreQualidade">Qualidade Premium</h4>
+                <p data-i18n="sobreQualidadeDesc">Materiais selecionados e acabamento impecável</p>
+              </div>
+            </div>
+            
+            <div class="sobre-feature reveal">
+              <div class="sobre-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 data-i18n="sobrePersonalizacao">Personalização Total</h4>
+                <p data-i18n="sobrePersonalizacaoDesc">Móveis feitos sob medida para seu espaço</p>
+              </div>
+            </div>
+            
+            <div class="sobre-feature reveal">
+              <div class="sobre-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4 data-i18n="sobrePrazo">Prazo Garantido</h4>
+                <p data-i18n="sobrePrazoDesc">Entrega em 3 a 10 dias úteis</p>
+              </div>
+            </div>
+            
+            <div class="sobre-feature reveal">
+              <div class="sobre-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 data-i18n="sobreSuporte">Suporte Dedicado</h4>
+                <p data-i18n="sobreSuporteDesc">Atendimento personalizado do início ao fim</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       CONTATO
+       ======================================== -->
+  <section id="contacto" class="section section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="secContacto">Contacto</h2>
+        <p class="section-subtitle" data-i18n="secContactoSub">Entre em contacto connosco</p>
+      </div>
+      
+      <div class="contato-grid">
+        <div class="contato-info">
+          <h3 data-i18n="footerContato">Informações de Contacto</h3>
+          
+          <div class="contato-item reveal">
+            <div class="contato-item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="contatoEndereco">Endereço</h4>
+              <p data-i18n="contatoEnderecoValor">Moçambique, Matola, Machava, Rua 23 número 32</p>
+            </div>
+          </div>
+          
+          <div class="contato-item reveal">
+            <div class="contato-item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="contatoTelefone">Telefone</h4>
+              <p>+258 84 562 9930</p>
+            </div>
+          </div>
+          
+          <div class="contato-item reveal">
+            <div class="contato-item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="contatoPrazo">Prazo de Entrega</h4>
+              <p data-i18n="contatoPrazoValor">3 a 10 dias úteis</p>
+            </div>
+          </div>
+          
+          <div class="contato-pagamentos reveal">
+            <h4 data-i18n="contatoPagamentos">Formas de Pagamento</h4>
+            <div class="pagamentos-lista">
+              <span class="pagamento-item">M-Pesa</span>
+              <span class="pagamento-item">e-Mola</span>
+              <span class="pagamento-item">mKesh</span>
+              <span class="pagamento-item">Transferência Bancária</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contato-mapa reveal">
+          <div class="mapa-placeholder">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#A68B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <p style="margin-top: 12px;">Matola, Machava<br>Rua 23 número 32</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Vilanculo Mobiliário</h3>
+          <p data-i18n="footerDesc">Design inteligente. Madeira de qualidade. Móveis sob medida para transformar seu espaço.</p>
+          <div class="footer-social">
+            <a href="https://facebook.com/vilanculo.mobiliario" target="_blank" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://instagram.com/vilanculo.wood" target="_blank" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://wa.me/258845629930" target="_blank" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4 data-i18n="footerLinks">Links Rápidos</h4>
+          <ul>
+            <li><a href="#cozinhas" data-i18n="navCozinhas">Cozinhas</a></li>
+            <li><a href="#armarios" data-i18n="navArmarios">Armários</a></li>
+            <li><a href="#camas" data-i18n="navCamas">Camas</a></li>
+            <li><a href="#galeria" data-i18n="navGaleria">Galeria</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4 data-i18n="footerServicos">Serviços</h4>
+          <ul>
+            <li><a href="#cozinhas">Cozinhas por medida</a></li>
+            <li><a href="#armarios">Armários modernos</a></li>
+            <li><a href="#camas">Bases de cama</a></li>
+            <li><a href="#contacto">Orçamentos</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4 data-i18n="footerContato">Contacto</h4>
+          <ul>
+            <li>+258 84 562 9930</li>
+            <li>Matola, Machava</li>
+            <li>Rua 23 número 32</li>
+            <li>Moçambique</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Vilanculo Mobiliário. <span data-i18n="footerDireitos">Todos os direitos reservados.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================
+       FLOATING WHATSAPP BUTTON
+       ======================================== -->
+  <a href="https://wa.me/258845629930" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+  </a>
+
+  <!-- ========================================
+       MODAL DE PRODUTO
+       ======================================== -->
+  <div class="modal-overlay" id="modal-produto">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Fechar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-body" id="modal-body">
+        <!-- Conteúdo do modal renderizado via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/produtos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
